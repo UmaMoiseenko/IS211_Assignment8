@@ -19,8 +19,6 @@ class Player:
 
 class ComputerPlayer(Player):
     def decision(self, game_total):
-        print "-----------------------------------------"
-
         limit = 100 - self.total
         limit = 25 if limit > 25 else limit
 
@@ -85,7 +83,6 @@ class GameCenter:
         print "Restart to play again."    
         sys.exit()
 
-
 class Proxy:
     def __init__(self, timestamp = 0):
         self.timestamp = timestamp
@@ -103,7 +100,6 @@ class Proxy:
 
 
 def main():
-
     parser = argparse.ArgumentParser()
     player1 = parser.add_argument("--player1", help='enter player type: "c" - computer, "h" -human', type=str)
     player2 = parser.add_argument("--player2", help='enter player type: "c" - computer, "h" -human', type=str)
