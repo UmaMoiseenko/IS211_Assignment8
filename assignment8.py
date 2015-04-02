@@ -29,7 +29,6 @@ class ComputerPlayer(Player):
             roll = 'h'
             rolling = 'passing'
 
-        print " COMPUTER is ", rolling
         return roll
 
 class PlayerFactory:
