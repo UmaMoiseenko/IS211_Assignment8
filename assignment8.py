@@ -14,7 +14,7 @@ class Player:
         self.total = self.total + newPoint
 
     def decision(self, game_total=0):
-        roll = raw_input("Would you like to roll? r = roll, h = pass")
+        roll = raw_input("Would you like to roll? r = roll, h = pass  ")
         return roll
 
 class ComputerPlayer(Player):
